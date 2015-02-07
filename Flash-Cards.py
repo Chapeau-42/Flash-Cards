@@ -1,6 +1,5 @@
 # Import ye libraries
 import pygame
-import csv
 import Window
 
 # Start ye pygame
@@ -8,7 +7,7 @@ pygame.init()
 
 
 # A Main function? Let's get started!
-class Deck():
+class Flash():
     running = True     # Control the game loop
     window = 0         # Where the Window goes
     frameRate = 0      # How many frames per second?
@@ -17,7 +16,7 @@ class Deck():
     # Set things up, have a game loop
     def __init__(self):
         self.running = True
-        self.window = Window.Window(700, 500, "Flash Cards")
+        self.window = Window.Window(500, 500, "Flash Cards")
         self.frameRate = 60
         self.clock = pygame.time.Clock()
 
@@ -32,4 +31,4 @@ class Deck():
 
 
 # Let's get started!
-deck = Deck()
+flash = Flash()
